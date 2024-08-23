@@ -1,0 +1,154 @@
+{
+  "leaderboard": [
+    {
+      "name": "Diamond Player",
+      "score": 1000,
+      "avatar": "https://secure.gravatar.com/avatar/89f62265519c76c020aa0611b1423e28?s=80&d=identicon",
+      "type": "Diamond"
+    },
+    {
+      "name": "Gold Player",
+      "score": 900,
+      "avatar": "https://secure.gravatar.com/avatar/89f62265519c76c020aa0611b1423e29?s=80&d=identicon",
+      "type": "Gold"
+    },
+    {
+      "name": "Silver Player",
+      "score": 800,
+      "avatar": "https://secure.gravatar.com/avatar/89f62265519c76c020aa0611b1423e30?s=80&d=identicon",
+      "type": "Silver"
+    },
+    {
+      "name": "Bronze Player",
+      "score": 700,
+      "avatar": "https://secure.gravatar.com/avatar/89f62265519c76c020aa0611b1423e31?s=80&d=identicon",
+      "type": "Bronze"
+    },
+    {
+      "name": "Player 5",
+      "score": 690,
+      "avatar": "https://secure.gravatar.com/avatar/89f62265519c76c020aa0611b1423e32?s=80&d=identicon",
+      "type": "Default"
+    },
+    {
+      "name": "Player 6",
+      "score": 680,
+      "avatar": "https://secure.gravatar.com/avatar/89f62265519c76c020aa0611b1423e33?s=80&d=identicon",
+      "type": "Default"
+    },
+    {
+      "name": "Player 7",
+      "score": 670,
+      "avatar": "https://secure.gravatar.com/avatar/89f62265519c76c020aa0611b1423e34?s=80&d=identicon",
+      "type": "Default"
+    },
+    {
+      "name": "Player 8",
+      "score": 660,
+      "avatar": "https://secure.gravatar.com/avatar/89f62265519c76c020aa0611b1423e35?s=80&d=identicon",
+      "type": "Default"
+    },
+    {
+      "name": "Player 9",
+      "score": 650,
+      "avatar": "https://secure.gravatar.com/avatar/89f62265519c76c020aa0611b1423e36?s=80&d=identicon",
+      "type": "Default"
+    },
+    {
+      "name": "Player 10",
+      "score": 640,
+      "avatar": "https://secure.gravatar.com/avatar/89f62265519c76c020aa0611b1423e37?s=80&d=identicon",
+      "type": "Default"
+    },
+    {
+      "name": "Player 11",
+      "score": 630,
+      "avatar": "https://secure.gravatar.com/avatar/89f62265519c76c020aa0611b1423e38?s=80&d=identicon",
+      "type": "Default"
+    },
+    {
+      "name": "Player 12",
+      "score": 620,
+      "avatar": "https://secure.gravatar.com/avatar/89f62265519c76c020aa0611b1423e39?s=80&d=identicon",
+      "type": "Default"
+    },
+    {
+      "name": "Player 13",
+      "score": 610,
+      "avatar": "https://secure.gravatar.com/avatar/89f62265519c76c020aa0611b1423e40?s=80&d=identicon",
+      "type": "Default"
+    },
+    {
+      "name": "Player 14",
+      "score": 600,
+      "avatar": "https://secure.gravatar.com/avatar/89f62265519c76c020aa0611b1423e41?s=80&d=identicon",
+      "type": "Default"
+    },
+    {
+      "name": "Player 15",
+      "score": 590,
+      "avatar": "https://secure.gravatar.com/avatar/89f62265519c76c020aa0611b1423e42?s=80&d=identicon",
+      "type": "Default"
+    },
+    {
+      "name": "Player 16",
+      "score": 580,
+      "avatar": "https://secure.gravatar.com/avatar/89f62265519c76c020aa0611b1423e43?s=80&d=identicon",
+      "type": "Default"
+    },
+    {
+      "name": "Player 17",
+      "score": 570,
+      "avatar": "https://secure.gravatar.com/avatar/89f62265519c76c020aa0611b1423e44?s=80&d=identicon",
+      "type": "Default"
+    },
+    {
+      "name": "Player 18",
+      "score": 560,
+      "avatar": "https://secure.gravatar.com/avatar/89f62265519c76c020aa0611b1423e45?s=80&d=identicon",
+      "type": "Default"
+    },
+    {
+      "name": "Player 19",
+      "score": 550,
+      "avatar": "https://secure.gravatar.com/avatar/89f62265519c76c020aa0611b1423e46?s=80&d=identicon",
+      "type": "Default"
+    },
+    {
+      "name": "Player 20",
+      "score": 540,
+      "avatar": "https://secure.gravatar.com/avatar/89f62265519c76c020aa0611b1423e47?s=80&d=identicon",
+      "type": "Default"
+    },
+    {
+      "name": "Player 21",
+      "score": 530,
+      "avatar": "https://secure.gravatar.com/avatar/89f62265519c76c020aa0611b1423e48?s=80&d=identicon",
+      "type": "Default"
+    },
+    {
+      "name": "Player 22",
+      "score": 520,
+      "avatar": "https://secure.gravatar.com/avatar/89f62265519c76c020aa0611b1423e49?s=80&d=identicon",
+      "type": "Default"
+    },
+    {
+      "name": "Player 23",
+      "score": 510,
+      "avatar": "https://secure.gravatar.com/avatar/89f62265519c76c020aa0611b1423e50?s=80&d=identicon",
+      "type": "Default"
+    },
+    {
+      "name": "Player 24",
+      "score": 500,
+      "avatar": "https://secure.gravatar.com/avatar/89f62265519c76c020aa0611b1423e51?s=80&d=identicon",
+      "type": "Default"
+    },
+    {
+      "name": "Player 25",
+      "score": 490,
+      "avatar": "https://secure.gravatar.com/avatar/89f62265519c76c020aa0611b1423e52?s=80&d=identicon",
+      "type": "Default"
+    }
+  ]
+}

@@ -17,6 +17,12 @@ namespace SimplePopupManager
     public class PopupManagerServiceService : IPopupManagerService
     {
         private readonly Dictionary<string, GameObject> m_Popups = new();
+        private readonly Transform _parent;
+
+        public PopupManagerServiceService(Transform parent)
+        {
+            _parent = parent;
+        }
 
         /// <summary>
         ///     Opens a popup by its name and initializes it with the given parameters.
@@ -24,7 +30,7 @@ namespace SimplePopupManager
         /// </summary>
         /// <param name="name">The name of the popup to open.</param>
         /// <param name="param">The parameters to initialize the popup with.</param>
-        public async void OpenPopup(string name, object param)
+        public async Task OpenPopup(string name, object param)
         {
             if (m_Popups.ContainsKey(name))
             {
@@ -46,6 +52,11 @@ namespace SimplePopupManager
                 return;
 
             GameObject popup = m_Popups[name];
+            var popupCloseComponents = popup.GetComponents<IPopupClose>();
+            foreach (var component in popupCloseComponents)
+            {
+                component.ClosePopup();
+            }
             Addressables.ReleaseInstance(popup);
             m_Popups.Remove(name);
         }
@@ -59,24 +70,20 @@ namespace SimplePopupManager
         /// <param name="param">The parameters to initialize the popup with.</param>
         private async Task LoadPopup(string name, object param)
         {
-            AsyncOperationHandle<GameObject> handle = Addressables.InstantiateAsync(name);
+            AsyncOperationHandle<GameObject> handle = Addressables.InstantiateAsync(name, _parent);
             await handle.Task;
 
             if (handle.Status == AsyncOperationStatus.Succeeded)
             {
                 GameObject popupObject = handle.Result;
+                m_Popups.Add(name, popupObject);
 
-                popupObject.SetActive(false);
                 IPopupInitialization[] popupInitComponents = popupObject.GetComponents<IPopupInitialization>();
 
                 foreach (IPopupInitialization component in popupInitComponents)
                 {
                     await component.Init(param);
                 }
-
-                popupObject.SetActive(true);
-
-                m_Popups.Add(name, popupObject);
             }
             else
             {

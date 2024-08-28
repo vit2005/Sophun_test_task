@@ -1,20 +1,20 @@
 - How your solution works.
 
-Main scene is located in Scenes/Main. 
-There are fullscreen button, so to open-close Leaderboard just click anywhere.
-MainLoader class (component is on Canvas gameObject) contains loading of Leaderboard popUp by using PopupManagerServiceService.
-Leaderboard prefab located in Prefabs/Leaderboard. Also in that folder there is LeaderboardPlayer prefab as "single line" of leaderboard view.
-On Leaderboard gameObject there is class LeaderboardPopup that handles it initialization and closing of popUp.
-On LeaderboardPlayer gameObject there is class LeaderboardItem that handles initialization and closing of single line in the popUp.
-Also AvatarCache class handles caching of avatars.
+The main scene is located in Scenes/Main. 
+There is a fullscreen button, so to open-close Leaderboard just click anywhere.
+MainLoader class (component is on Canvas gameObject) contains loading of Leaderboard popup by using PopupManagerServiceService.
+The Leaderboard prefab is located in Prefabs/Leaderboard. Also in that folder, there is a LeaderboardPlayer prefab as a "single line" of the leaderboard view.
+On Leaderboard gameObject there is a class LeaderboardPopup that handles it initialization and closing of popUp.
+On LeaderboardPlayer gameObject there is a class LeaderboardItem that handles the initialization and closing of a single line in the popup.
+Also AvatarCache class handles the caching of avatars.
 
 - Any design choices or assumptions you made in your implementation.
 
 I saw existed interface IPopupInitialization, so i had to add IPopupClose for correct closing handling.
 SimplePopupManager class required some changes:
-1) I add instantiating at parent, becuose Initialisation method didn't return popUp gameObject to set it manualy
-2) I changed return type of Init method from void to Task to handle asyncronious loading with interface usage
-3) I added closing mechanics into existing code to handle correct canceling of loading processes (if closing triggered before opening finished)
+1) I added instantiating at a parent, because Initialisation method didn't return popUp gameObject to set it manually
+2) I changed the return type of the Init method from void to Task to handle asynchronous loading with interface usage
+3) I added closing mechanics into the existing code to handle the correct canceling of loading processes (if closing is triggered before opening finished)
 
 
 

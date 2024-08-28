@@ -7,6 +7,7 @@ using UnityEngine;
 public class MainLoader : MonoBehaviour
 {
     [SerializeField] private Transform parent;
+    [SerializeField] private GameObject tip;
     private IPopupManagerService _service;
     private Coroutine _coroutine;
     private bool _isOpened = false;
@@ -33,6 +34,8 @@ public class MainLoader : MonoBehaviour
             _coroutine = StartCoroutine(OpenPopupCoroutine(popupTitle, data.leaderboard));
             _isOpened = true;
         }
+
+        tip.SetActive(false);
     }
 
     private IEnumerator OpenPopupCoroutine(string name, object param)

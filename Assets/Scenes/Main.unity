@@ -136,7 +136,7 @@ GameObject:
   - component: {fileID: 720613125}
   - component: {fileID: 720613124}
   m_Layer: 5
-  m_Name: Image
+  m_Name: OpenLeaderboardButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

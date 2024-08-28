@@ -18,6 +18,8 @@ public class LeaderboardPopup : MonoBehaviour, IPopupInitialization, IPopupClose
         {
             cancellationTokenSource = new CancellationTokenSource();
 
+            List<Task> initializationTasks = new List<Task>();
+
             foreach (var data in leaderboardDataArray)
             {
                 GameObject itemObject = Instantiate(itemPrefab, itemsContainer);
@@ -26,15 +28,17 @@ public class LeaderboardPopup : MonoBehaviour, IPopupInitialization, IPopupClose
 
                 if (leaderboardItem != null)
                 {
-                    try
-                    {
-                        await leaderboardItem.Init(data, cancellationTokenSource.Token);
-                    }
-                    catch (TaskCanceledException)
-                    {
-                        Debug.Log("Leaderboard item initialization was canceled.");
-                    }
+                    initializationTasks.Add(leaderboardItem.Init(data, cancellationTokenSource.Token));
                 }
+            }
+
+            try
+            {
+                await Task.WhenAll(initializationTasks);
+            }
+            catch (TaskCanceledException)
+            {
+                Debug.Log("One or more leaderboard item initializations were canceled.");
             }
         }
     }
